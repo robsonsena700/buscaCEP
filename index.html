@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca CEP</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Adicionar o Supabase JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        body{display: flex;justify-content: center;align-items: center;height: 100vh;}
+        form{display: flex;flex-direction: column;width: 400px;}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="auth-container">
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" aria-label="Alternar tema">
+                    <i class="fas fa-sun light-icon"></i>
+                    <i class="fas fa-moon dark-icon"></i>
+                </button>
+            </div>
+
+    <form>
+        <label for="cep">CEP</label>
+        <input type="text" id="cep">
+        <label for="rua">Rua</label>
+        <input type="text" id="rua">
+        <label for="bairro">Bairro</label>
+        <input type="text" id="bairro">
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade">
+        <label for="estado">Estado</label>
+        <input type="text" id="estado">
+    </form>
+    <script src="index.js"></script>
+    <!-- Carregar scripts na ordem correta -->
+    <script src="js/theme.js"></script>
+    <script src="js/supabase.js"></script>
+</body>
+</html>

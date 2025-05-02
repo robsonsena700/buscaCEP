@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  line-height: 1.5;
+  min-height: 100vh;
+  transition: var(--transition-colors);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition-colors);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  font-weight: 500;
+  padding: var(--spacing-2) var(--spacing-4);
+  transition: var(--transition-all);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--primary-foreground-color);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--secondary-foreground-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--muted-color);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}

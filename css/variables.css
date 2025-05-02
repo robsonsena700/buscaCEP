@@ -1,0 +1,121 @@
+:root {
+    /* Light theme (default variables) */
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.145 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.145 0 0);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.145 0 0);
+    --primary: oklch(0.205 0 0);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.97 0 0);
+    --secondary-foreground: oklch(0.205 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --accent: oklch(0.97 0 0);
+    --accent-foreground: oklch(0.205 0 0);
+    --destructive: oklch(0.577 0.245 27.325);
+    --destructive-foreground: oklch(0.577 0.245 27.325);
+    --border: oklch(0.922 0 0);
+    --input: oklch(0.922 0 0);
+    --ring: oklch(0.708 0 0);
+    --radius: 0.625rem;
+  
+    /* Convertendo para valores mais legíveis */
+    --background-color: #ffffff;
+    --foreground-color: #1a1a1a;
+    --card-color: #ffffff;
+    --card-foreground-color: #1a1a1a;
+    --primary-color: #1a1a1a;
+    --primary-foreground-color: #ffffff;
+    --secondary-color: #f5f5f5;
+    --secondary-foreground-color: #1a1a1a;
+    --muted-color: #f5f5f5;
+    --muted-foreground-color: #6f6f6f;
+    --accent-color: #f5f5f5;
+    --accent-foreground-color: #1a1a1a;
+    --destructive-color: #ef4444;
+    --border-color: #e5e5e5;
+    --input-color: #e5e5e5;
+    --ring-color: #a3a3a3;
+  
+    /* Sombras */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  
+    /* Espaçamento */
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-8: 2rem;
+    --spacing-10: 2.5rem;
+    --spacing-12: 3rem;
+  
+    /* Fontes */
+    --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+      sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+  
+    /* Transições */
+    --transition-all: all 0.3s ease;
+    --transition-colors: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, fill 0.3s ease, stroke 0.3s
+      ease;
+  }
+  
+  .dark {
+    /* Dark theme */
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.145 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.145 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.985 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.396 0.141 25.723);
+    --destructive-foreground: oklch(0.637 0.237 25.331);
+    --border: oklch(0.269 0 0);
+    --input: oklch(0.269 0 0);
+    --ring: oklch(0.439 0 0);
+  
+    /* Convertendo para valores mais legíveis */
+    --background-color: #1a1a1a;
+    --foreground-color: #f5f5f5;
+    --card-color: #1a1a1a;
+    --card-foreground-color: #f5f5f5;
+    --primary-color: #f5f5f5;
+    --primary-foreground-color: #1a1a1a;
+    --secondary-color: #2a2a2a;
+    --secondary-foreground-color: #f5f5f5;
+    --muted-color: #2a2a2a;
+    --muted-foreground-color: #a3a3a3;
+    --accent-color: #2a2a2a;
+    --accent-foreground-color: #f5f5f5;
+    --destructive-color: #b91c1c;
+    --border-color: #2a2a2a;
+    --input-color: #2a2a2a;
+    --ring-color: #525252;
+  
+    /* Sombras para tema escuro */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  }
